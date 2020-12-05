@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Takdir Hesapla</title>
+    <style>
+        td,tr,th{
+            border:1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+<form action="/" method="POST">
+    <table>
+        <tr>
+            <th>Dersin Adı</th>
+             <th>Haftalık Ders Sayısı</th>
+             <th>Yıl sonu Ortalaması</th>
+        </tr>
+        <tr>
+            <td>Matematik</td>
+            <td><input type="number" name="ks1" required=""></td>
+            <td><input type="number" name="ys1" required=""></td>
+        </tr>
+        <tr>
+            <td>Kimya</td>
+            <td><input type="number" name="ks2" required=""></td>
+            <td><input type="number" name="ys2" required=""></td>
+        </tr>
+        <tr>
+            <td>Fizik</td>
+            <td><input type="number" name="ks3" required=""></td>
+            <td><input type="number" name="ys3" required=""></td>
+        </tr>
+        <tr>
+            <td>Biyoloji</td>
+            <td><input type="number" name="ks4" required=""></td>
+            <td><input type="number" name="ys4" required=""></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td><input style="float: right" type="submit" value="hesapla"></td>
+        </tr>
+        <tr>
+            <td>Yıl sonu ortalamanız : {{ ortalama }}</td>
+            <td>Başarı Durumunuz : {{ durum }}</td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
